@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SmartBook Genie</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f8fa;
+      color: #333;
+    }
+
+    header {
+      background-color: #4a90e2;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(to right, #4a90e2, #6dd5fa);
+      color: white;
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 60px 20px;
+      background-color: #fff;
+    }
+
+    .feature-box {
+      background: #e3f2fd;
+      padding: 30px;
+      margin: 15px;
+      border-radius: 12px;
+      width: 280px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .feature-box h3 {
+      margin-top: 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #4a90e2;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>SmartBook Genie</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Features</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Welcome to SmartBook Genie</h2>
+    <p>Your AI-powered book recommendation engine, designed to match your unique taste.</p>
+  </section>
+
+  <section class="features">
+    <div class="feature-box">
+      <h3>🎯 Personalized Picks</h3>
+      <p>Get book recommendations tailored to your interests, moods, and genres.</p>
+    </div>
+    <div class="feature-box">
+      <h3>⚡ AI Smart Engine</h3>
+      <p>Powered by machine learning to improve with every selection you make.</p>
+    </div>
+    <div class="feature-box">
+      <h3>📚 Massive Library</h3>
+      <p>Explore thousands of titles from classics to trending bestsellers.</p>
+    </div>
+    <div class="feature-box">
+      <h3>🧠 Genre Intelligence</h3>
+      <p>Let SmartBook Genie understand your taste across mystery, fantasy, romance & more.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 SmartBook Genie. All rights reserved.</p>
+  </footer>
+
+  <!-- IBM Watson Assistant Embed -->
+  <script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "93598127-8caa-43f4-b2f0-ae0652acdadb", // Your integration ID
+      region: "au-syd", // Your region
+      serviceInstanceID: "da71f6de-b74c-445e-ba6d-54d3dcea14d3", // Your service instance ID
+      onLoad: function(instance) { instance.render(); }
+    };
+    setTimeout(function(){
+      const t = document.createElement('script');
+      t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/latest/WatsonAssistantChatEntry.js";
+      document.head.appendChild(t);
+    });
+  </script>
+
+</body>
+</html>
